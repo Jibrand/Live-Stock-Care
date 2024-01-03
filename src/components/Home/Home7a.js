@@ -1,4 +1,4 @@
- 
+
 import React, { useState } from "react";
 import { BiUserCircle } from "react-icons/bi";
 import { Container, Row, Col } from "react-bootstrap";
@@ -54,10 +54,9 @@ function Home2() {
 
     return (
         <>
- 
+
             <Container fluid className="home-about-section-444421   " id="about" style={{}}>
-<br/>
-<br/>
+            
                 <Container className="home-4444">
                     <Row>
                         <Col md={6} className="home-about-description">
@@ -68,8 +67,8 @@ function Home2() {
                             <p className="home-about-body" style={{ color: "RED" }}><>Fully Guarantee!!!!</></p>
                             <h1 className="home-about-body-under" style={{ fontSize: "2.6em", color: "black", textAlign: "left", fontFamily: "Sans-serif" }}><b>  ABOUT WHAT?<span className="purple">    </span>  </b> </h1>
                             <p className="home-about-body-under-under" style={{ color: "black", textAlign: "left" }}>
-                            We give you the best enviorment for your animals in which they can grow at their full potential. Our dedicated team strives to provide the ideal conditions for your animals to thrive. From spacious enclosures to enriching activities, we prioritize the well-being and happiness of your furry friends. Our commitment to excellence ensures that every aspect of our facility is designed with your animals in mind.
-  
+                                We give you the best enviorment for your animals in which they can grow at their full potential. Our dedicated team strives to provide the ideal conditions for your animals to thrive. From spacious enclosures to enriching activities, we prioritize the well-being and happiness of your furry friends. Our commitment to excellence ensures that every aspect of our facility is designed with your animals in mind.
+
                                 <br />
                                 <br />
                             </p>
@@ -79,7 +78,7 @@ function Home2() {
                 </Container>
 
             </Container>
-           
+
         </>
     );
 }

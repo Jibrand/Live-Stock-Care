@@ -102,7 +102,7 @@ function Home() {
       <section className="text-gray-600 body-font  ">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-5xl text-3xl mb-4 font-extrabold text-gray-900 sm:mt-[100px]   herotext">No worries are there when<span style={{  color:"#FFC200"}}> Livestock Care </span> is here.
+            <h1 className="title-font sm:text-5xl text-5xl mb-4 font-extrabold text-gray-900 sm:mt-[100px]   herotext">No worries are there when<span style={{  color:"#FFC200"}}> Livestock Care </span> is here.
             </h1>
             <p className="mb-8 leading-relaxed">Too much worry about bad smell of manure? Don't have to worry as we are here to take care of all that mess in most economical way. Join us today and relief yourself.</p>
             <div className="flex justify-center">
@@ -110,7 +110,7 @@ function Home() {
               {/* <button onClick={() => Navigate('/about')} className="bg-yellowe ml-36 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg sm:mr-0 mr-28">Explore More</button> */}
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
             <img className="object-cover object-center box-shadow heroimg" style={{ borderRadius: "20px" }} alt="hero" src={img1c} />
           </div>
         </div>
@@ -197,7 +197,7 @@ function Home() {
       {/* <C2 /> */}
       {/* <Home7 /> */}
     {/* cards */}
-      <MDBContainer className="py-5 sm:-mb-0 -mb-[1900px]">
+      <MDBContainer className="py-5 sm:-mb-0 -mb-[1900px] home1">
       
 
       <MDBRow className="text-center">
@@ -275,9 +275,9 @@ function Home() {
       {/* <Home9 /> */}
 
 
-      <Container fluid className="footerabout sm:mt-6  mt-[1000px]" >
+      <Container fluid className="footerabout sm:mt-6  mt-[750px]" >
         <Row>
-          <h2 style={{ textAlign: "center", color: "white" }}>About the Company</h2>
+          <h2 style={{ textAlign: "center", color: "white" }}>About the Company</h2>5
           <p className="hj" style={{ textAlign: "center", color: "white" }}> Livestock Care is a project managed by Bioamaz Cooperative </p>
 
           <Col md="3" className="footer-copywright">

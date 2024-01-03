@@ -165,7 +165,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #989898  !important;
+  background-color: #989898 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(255, 251, 0, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -176,7 +176,7 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
-  background-color: #989898 ;
+  background-color: #989898;
 
 }
 
@@ -556,6 +556,11 @@ button:focus {
     padding-left: 0px !important;
   }
 
+  .home1 {
+    /* /* margin-top: 30px !important; */
+    margin-bottom: 1px !important; 
+  }
+
   .heading-name2 {
     font-size: 3.0em !important;
     text-align: center;
@@ -880,6 +885,7 @@ button:focus {
     background-size: cover;
     height: 100vh;
     color: white;
+    margin-bottom:-100px;
   }
 }
 
