@@ -120,7 +120,7 @@ export default function App() {
                                                                     </div>
                                                                 </div>
                                                                 <div className="d-flex flex-row align-items-center teko" style={{ fontSize: "23px" }}>
-                                                                    ${product.price}
+                                                                    {product.price}
 
                                                                 </div>
                                                             </div>

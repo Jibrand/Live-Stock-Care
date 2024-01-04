@@ -94,7 +94,10 @@ function App({ searchInput, categoryName }) {
           <div class="flex flex-wrap -m-4    gh">
             {filteredAbouts  // Filter the upsell products by isrequested value
               .map((about, i) => (
-                <div class=" p-3 sm:w-[250px] mx-1 mb-2 bg-white shadow-xl hover:shadow-2xl  " key={about._id}>
+                <div
+                className="p-3 sm:w-[250px] w-full mx-1 mb-2 bg-white shadow-xl hover:shadow-2xl mx-auto" // Add mx-auto for centering
+                key={about._id}
+              >
                   <Link to={`/SingleProduct/${about._id}`} style={{ color: "black", textDecoration: "none", cursor: "pointer" }}>
 
                     <a class="block relative h-48 rounded overflow-hidden">

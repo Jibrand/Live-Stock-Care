@@ -136,7 +136,7 @@ const [emailSent, setEmailSent] = useState(false);
     setuserName(docId1)
     setuserName(result[0].firstname + ' ' + result[0].lastname)
     const smel = user.email
-    axios.post(`${Api}/purchase-the-order/pm`, { smel, email, cartItems, totalPrice, totalQuantities, docId1 })
+    // axios.post(`${Api}/purchase-the-order/pm`, { smel, email, cartItems, totalPrice, totalQuantities, docId1 })
     setEmailSent(true);
    }
   };

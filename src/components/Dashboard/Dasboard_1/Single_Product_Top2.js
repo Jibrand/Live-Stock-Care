@@ -15,7 +15,7 @@ export default function Deposits() {
   const params = useParams();
 
   useEffect(() => {
-    const costerID = localStorage.getItem('costerID'); // Retrieve the stored _id from local storage
+    const costerID = localStorage.getItem('costerID');
 
     const fetchNotifications = async () => {
       const query = `*[_type == "Orders" && user._ref == "${costerID}"] | order(date1 desc, _createdAt desc)`;
@@ -39,15 +39,22 @@ export default function Deposits() {
           <p>{t('l64')}</p>
         ) : (
           notifications.map((notification) => {
-            // Subtract 30 days from the date1 and calculate the difference in days
             let daysLeft = moment().diff(moment(notification.date1).subtract(30, 'days'), 'days');
 
-            // If daysLeft is less than or equal to -1, add 30 more days
-            daysLeft = daysLeft <= -1 ? daysLeft + 30 : daysLeft;
+            // Check if daysLeft is less than or equal to -1
+            if (daysLeft <= -1) {
+              daysLeft += 30;
+            }
+
+            // Set the color based on the number of days left
+            const color = daysLeft <= 3 && daysLeft !== 0 ? 'red' : 'black';
+
+            // Display "30 days" when exactly 0 days left
+            const displayDays = daysLeft === 0 ? 30 : daysLeft;
 
             return (
               <React.Fragment key={notification._id}>
-                <p className='lato' style={{ marginBottom: '5px', color: 'black' }}>
+                <p className='lato' style={{ marginBottom: '5px', color: color }}>
                   Your Animal{' '}
                   <b>
                     <span style={{ color: '#430e7e' }}>
@@ -59,7 +66,7 @@ export default function Deposits() {
                     </span>
                   </b>
                   -[<span style={{ fontSize: '13px' }}><i>{notification._id}</i></span>] Service will expire in{' '}
-                  {daysLeft} days
+                  {displayDays} days
                 </p>
               </React.Fragment>
             );
