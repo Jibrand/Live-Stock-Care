@@ -126,6 +126,8 @@ export default function App() {
                                         <h5 className='' style={{ textAlign: "left", paddingTop: "15px", fontSize: "40px", fontWeight: "bold" }}><b>{product.name}</b></h5>
                                         <h5 className='' style={{ textAlign: "left", paddingTop: "05px", fontSize: "18px" }}>
                                             <PortableText content={product.shortdescription} serializers={{ h1: (props) => <h1 style={{ color: "red" }} {...props} />, li: ({ children }) => <li className="special-list-item">{children}</li>, }} />
+                      <p className=''    ><b><i>Monthly Price for caring is <span className='ostwold'>Rs {product.permonthprice}</span></i></b></p>
+
                                         <h5 className='ostwold' style={{ textAlign: "left", paddingTop: "05px", fontSize: "21px", fontWeight: "bold" ,marginLeft:"10px"}}><b> Rs {product.price}</b></h5>
                                         </h5>
                                         <div class="flex-container" style={{ display: "flex" }}>

@@ -213,7 +213,7 @@ export default function QuantityEdit() {
                                                         <span className="close" onClick={toggleModal}>&times;</span>
                                                         {/* Add the content of your modal here */}
                                                         <div className='font-bold text-2xl mb-4'>One Last Step</div>
-                                                        <div className='mb-2'>To Continue Further You have to pay<b> Rs {totalPrice} </b>to this Account</div>
+                                                        <div className='mb-2'>To Continue Further You have to pay<b> Rs {totalPrice} and 1 month in Advance </b>to this Account</div>
                                                         <div className='font-bold ' style={{ color: "#280A43" }}><i>IBAN: RO09PORL8297336485969785</i></div>
                                                         <div className='font-bold mb-2' style={{ color: "#280A43" }}><i>Name: LiveStock Care Ltd</i></div>
                                                         <div>Wish you a Happy Invesment at LiveStock Care Ltd</div>
